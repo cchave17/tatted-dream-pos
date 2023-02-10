@@ -1,4 +1,4 @@
-class Sessions:
+class Session:
     def __init__(self, session_id, tattoo_id, artist, percentage, session_cost, tip, session_date):
         self.session_id = session_id
         self.tattoo_id = tattoo_id

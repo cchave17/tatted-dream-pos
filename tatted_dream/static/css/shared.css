@@ -1,0 +1,14 @@
+.header {
+    text-align: center;
+}
+
+.buttons-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.button {
+    /* Add button styles here */
+}

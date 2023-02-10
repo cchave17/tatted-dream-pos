@@ -5,10 +5,11 @@
 
 def display_menu():
     print("Welcome to the Tattoo Database Console App")
-    print("1. Display all customers")
-    print("2. Add a new customer")
-    print("3. Add a new tattoo")
-    print("4. Quit")
+    print("1. Customers")
+    print("2. New Tattoo")
+    print("3. View Schedule")
+    print("4. Admin")
+    print("5. Quit")
     print()
 
 def main():
