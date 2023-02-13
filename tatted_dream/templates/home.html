@@ -1,16 +1,17 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <title>Tatted Dreams</title>
-    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles/main.css') }}">
-</head>
-<body>
-    <h1 class="header">Tatted Dreams</h1>
-    <div class="buttons-container">
-        <button class="button">Customers</button>
-        <button class="button">New Tattoo</button>
-        <button class="button">View Schedule</button>
-        <button class="button">ADMIN</button>
+  <head>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/shared.css') }}">
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="title">Tatted Dreams</h1>
+      <div class="buttons">
+        <a href="{{ url_for('customers') }}" class="button">Customers</a>
+        <a href="{{ url_for('new_tattoo') }}" class="button">New Tattoo</a>
+        <a href="{{ url_for('view_schedule') }}" class="button">View Schedule</a>
+        <a href="{{ url_for('admin') }}" class="button">ADMIN</a>
+      </div>
     </div>
-</body>
+  </body>
 </html>
