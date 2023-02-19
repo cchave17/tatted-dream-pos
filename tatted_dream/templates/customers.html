@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/shared.css') }}">
+  </head>
+  <body>
+    <div class="container">
+      <h1>Tatted Dreams</h1>
+      <div class="buttons">
+        <a href="{{ url_for('view_customers') }}" class="button">View All Customers</a>
+        <a href="{{ url_for('add_customer') }}" class="button">Add New Customer</a>
+        <a href="#" class="button">ADMIN</a>
+        <a href="/" class="button">HOME</a>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="{{url_for('static', filename='css/shared.css')}}"/>
+    <title>Add Customer</title>
+</head>
+<body>
+<div class="container">
+    <h1>Add Customer</h1>
+    <form action="{{ url_for('add_customer') }}" method="post" enctype="multipart/form-data">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name">
+        <br><br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email">
+        <br><br>
+        <label for="phone">Phone:</label>
+        <input type="tel" id="phone" name="phone">
+        <br><br>
+        <label for="gender">Gender:</label>
+        <input type="radio" id="male" name="gender" value="Male">
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="Female">
+        <label for="female">Female</label>
+        <br><br>
+        <label for="photo_id">Photo ID:</label>
+        <input type="file" id="photo_id" name="photo_id">
+        <br><br>
+        <label for="signature">Signature:</label>
+        <input type="file" id="signature" name="signature">
+        <br><br>
+        <input type="submit" value="Submit">
+    </form>
+</div>
+</body>
+</html>
