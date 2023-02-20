@@ -9,7 +9,7 @@ tatted_dream-pos/
     ├── .gitignore
     ├── tatted_dream/
     │       ├── __init__.py
-    │       ├── main.py
+    │       ├── app.py
     │       ├── server/
     │       │   ├── __init__.py
     │       │   ├── routes.py

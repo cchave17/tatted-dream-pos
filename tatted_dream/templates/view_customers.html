@@ -30,13 +30,12 @@
                 <td>{{ customer.Email }}</td>
                 <td>{{ customer.Phone }}</td>
                 <td>{{ customer.Gender }}</td>
-                <td>{% if customer.Photo_ID %}<img src="data:image/jpeg;base64,{{ customer.Photo_ID.decode('utf-8')|b64encode }}" alt="Photo ID" width="100" height="100"/>{% endif %}</td>
-                <td>{% if customer.Signature %}<img src="data:image/jpeg;base64,{{ customer.Signature.decode('utf-8')|b64encode }}" alt="Signature" width="100" height="100"/>{% endif %}</td>
+                <td>{% if customer.Photo_ID %}<img src="data:image/jpeg;base64,{{ customer.Photo_ID|b64encode }}" alt="Photo ID" width="100" height="100"/>{% endif %}</td>
+                <td>{% if customer.Signature %}<img src="data:image/jpeg;base64,{{ customer.Signature|b64encode }}" alt="Photo ID" width="100" height="100"/>{% endif %}</td>
             </tr>
             {% endfor %}
             </tbody>
         </table>
-
     </div>
             <div class="buttons">
             <a href="{{ url_for('customers') }}" class="button">Back</a>

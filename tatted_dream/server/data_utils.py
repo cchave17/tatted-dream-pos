@@ -3,24 +3,14 @@ Database Connection
 """
 import os
 import pymysql
-from dotenv import load_dotenv
-
 
 def remove_newline(string):
-    """
-    Remove annoying newlines that get inserted into secrets
-    :param string: String to remove newlines from
-    :return: string without newlines
-    """
     if isinstance(string, str):
         return string.replace("\n","")
     return None
 
 
 def mysql_connection():
-    """
-    get a connection to mysql
-    """
     try_count = 0
     while try_count < 3:
         try:
@@ -38,12 +28,6 @@ def mysql_connection():
 
 
 def execute_sql(sql, parameter, select=True):
-    """
-    :param sql:
-    :param parameter:
-    :param select:
-    :return:
-    """
     try:
         with mysql_connection() as connection:
             with connection.cursor() as cursor:
