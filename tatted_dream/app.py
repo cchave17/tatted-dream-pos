@@ -1,7 +1,5 @@
 import base64
-
 from flask import Flask, render_template, request, redirect, url_for
-
 from tatted_dream.server.data_utils import get_all_customers, add_new_customer
 
 ALLOWED_EXTENSIONS = {'txt', 'pdf', 'png', 'jpg', 'jpeg', 'gif'}
